@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incorporating box model</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+body{
+    font-size: 18px;
+    font-family: calibri,Arial;
+}
+.header{
+    width: 1140px;
+    margin:20px auto 10px auto ;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background-image: url(https://media.istockphoto.com/photos/modern-library-with-laptops-on-the-table-and-books-on-the-bookshelves-picture-id1308634001?b=1&k=20&m=1308634001&s=170667a&w=0&h=kyUAgNddlxX2AS3jc-cUV1DH_8nvBtzptLSLTqTWKI0=);
+    //background-size: cover;
+}
+.container{
+width: 1140px;
+margin: 20px auto 10px auto;
+position: relative;
+}
+.article{
+    padding-right: 30px;
+    width: 75%;
+    display: inline-block;
+        float: left;
+    //margin: 20px auto 10px auto;
+}
+.article-text{
+    text-align: justify;
+    margin-bottom: 20px 0 ;
+}
+    h1,h2{
+        color: #f28f0c;
+    }
+    h1{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .article-image{
+        height: auto;
+        width: 100%;
+    }
+    .other-posts{
+        margin-top: 85px;
+width: 25%;
+display: inline-block;
+    }
+    .blog-post{
+margin-bottom: 50px;
+    }
+    .other-posts img{
+        width: 80%;
+        height: 300px;
+    }
+    .other-title{
+        font-size: 16px;
+        color: #f28f0c;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .clearfix{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .footer-image{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        float: left;
+
+    }
+    .social-link{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+    .social-media{
+        position:fixed;
+        top: 10px;
+        right: 2px;
+
+    }
+    .footer p{
+        width: 60%;
+        margin-left: 20px;
+        text-align: justify;
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="header">The Simple Life</div>
+    <div class="container">
+        <div class="social-media">
+            <a href="www.facebook.com"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="fb-logo"class="social-link"></a>
+           <a href="www.instagram.com"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"alt="insta-logo"class="social-link"></a>
+            <a href="www.twitter.com"><img src="data:image/png;base64,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"alt="twitter-logo"class="social-link"></a>
+            </div>
+    <div class="article">
+        <h1>Make the Most of What You Have Kaifee</h1>
+        <h2>Dec 07,2021</h2>
+        <img src="https://media.istockphoto.com/photos/blue-sky-with-scattered-clouds-picture-id106577335?b=1&k=20&m=106577335&s=170667a&w=0&h=3NES7-jtxtE-L2qlrSY0ucmQNjfolKmmPK5wFMShG-Y=" alt="sky" class="article-image">
+        <p class="article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aliquam numquam illo, quae impedit cumque non veritatis soluta amet debitis ad id autem eaque dolorem accusamus atque itaque consectetur hic blanditiis. Expedita totam ipsum distinctio quasi asperiores libero ullam quam.</p>
+        <h1>Make the Most of What You Have MD</h1>
+        <h2>Dec 07,2021</h2>
+        <img src="https://thumbs.dreamstime.com/b/gold-fish-change-move-career-opportunity-rise-concept-jump-other-bigger-bowl-isolated-white-background-141126749.jpg" alt="sky">
+        <p class="article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aliquam numquam illo, quae impedit cumque non veritatis soluta amet debitis ad id autem eaque dolorem accusamus atque itaque consectetur hic blanditiis. Expedita totam ipsum distinctio quasi asperiores libero ullam quam.</p>
+    </div>
+    <div class="other-posts">
+        <h2>Other posts</h2>
+        <div class="blog-post">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/415DSy0f7ML._SX331_BO1,204,203,200_.jpg" alt="Minimalist">
+            <a href="#" class="other-title"><p>The Minimalist Mindset</p></a>
+        </div>
+        <div class="blog-post">
+            <img src="https://m.media-amazon.com/images/I/417hNJbc2GL.jpg" alt="Happy life">
+            <a href="#"class="other-title"><p>7 Secret to a happy life</p></a>
+        </div>
+        <div class="blog-post">
+            <img src="https://www.incimages.com/uploaded_files/image/1024x576/getty_495142964_198701.jpg" alt="Success">
+            <a href="#"class="other-title"><p>Create your own success</p></a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer">
+    <h2 class="footer-heading">Author Information</h2>
+    <a href="https://books.google.co.in/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgG7fVGimhVOrX3rOxVFi7zfae7eLiwLWHA&usqp=CAU" alt="library" class="footer-image"></a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam officia, sint deleniti rerum praesentium vitae veritatis cupiditate provident nam enim? Nisi!</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>startup website</title>
+    <script src="http://kit.fontawesome.com/4e55c5f54e.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('http://fonts.googleapis.com/css2?family=lobster&family=noto+sans+JP&family=Roboto&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            list-style: none;
+
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul li a:hover {
+            border-bottom: 3px solid #00adf3;
+        }
+
+        .logo {
+            font-family: 'Lobster', cursive;
+            font-size: 2rem;
+        }
+
+        .color {
+            color: #00adf3;
+        }
+
+        .header {
+            height: 100vh;
+        }
+
+        img {
+            background-position: center;
+            background-size: cover;
+            width: 65%;
+        }
+
+        .header-div {
+            font-family: 'Noto sans JP';
+            font-size: 1.6rem;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 1.3rem;
+            padding-left: 1.3rem;
+        }
+
+        .btn {
+            background-color: #00adf3;
+            border: none;
+            border-radius: 10rem;
+            padding: 1rem;
+            width: 8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Noto sans JP';
+        }
+
+        .main-services {
+            display: flex;
+            flex: 1;
+        }
+
+        .container {
+            margin: 10px auto;
+            width: 74rem;
+        }
+
+        .services-h1 {
+            text-align: center;
+            font-family: 'Noto sans JP';
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .p {
+            text-align: center;
+            font-family: 'Noto sans JP';
+            color: #00adf3;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+
+        .services-h3 {
+            text-align: center;
+            padding-bottom: 1.6rem;
+        }
+
+        .cards-p {
+            font-size: 1.3rem;
+            margin: 10px auto;
+            padding-bottom: 1.6rem;
+
+        }
+
+        .cards {
+            text-align: center;
+            font-family: 'Noto sans JP';
+            padding: 1.3rem;
+            border: 1.5px solid #c2bdc7;
+            margin-left: 1rem;
+
+        }
+
+        .cards:hover {
+            border: 3px solid #00adf3;
+
+        }
+
+        .cards i {
+            color: #00adf3;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Web<span class="color">D</span>ev</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact us">Contacts</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header-div">
+            <h1 class="head-text1">WebDev is a startup. We build awesome website for you <br>
+                <button class="btn">contact us</button>
+            </h1>
+            <img src="images/undraw.png">
+
+        </div>
+    </header>
+    <section id="services" class="container">
+        <p class="p">services</p>
+        <h1 class="services-h1">With our creative team we <br> deliver you the best and the <br> creative product</h1>
+        <div class="main-services">
+            <div class="cards">
+                <i class="fas fa-palette fa-5x"></i>
+                <h3 class="services-h3">Graphics Designer</h3>
+                <p class="cards-p">With our creative team we deliver you the best and the creative product.WebDev is a
+                    startup.
+                    We build awesome website for you </p>
+            </div>
+            <div class="cards">
+                <i class="fas fa-laptop-code fa-5x"></i>
+                <h3 class="services-h3">Graphics Designer</h3>
+                <p class="cards-p">With our creative team we deliver you the best and the creative product.WebDev is a
+                    startup.
+                    We build awesome website for you </p>
+            </div>
+            <div class="cards">
+                <i class="fas fa-palette fa-5x"></i>
+                <h3 class="services-h3">Graphics Designer</h3>
+                <p class="cards-p">With our creative team we deliver you the best and the creative product.WebDev is a
+                    startup.
+                    We build awesome website for you </p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-div">
+            <p class="about-main-p">About</p>
+            <h1 class="about-h1">Experienced team</h1>
+            <p class="about-p">With our creative team we deliver you the best and the creative product.WebDev is a
+                startup.
+                We build awesome website for you</p>
+            <button class="btn">Read More</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
