@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition&Animaton</title>
+</head>
+<style>
+    @keyframes text1 {
+        10%{opacity: 1;}
+        40%{opacity: 0;}
+    }
+    @-webkit-keyframes text1{
+        10%{opacity: 1;}
+        40%{opacity: 0;}
+    }
+    @keyframes text2 {
+        30%{opacity: 0;}
+        60%{opacity: 1;}
+    }
+    @-webkit-keyframes text2{
+        30%{opacity: 1;}
+        60%{opacity: 0;}
+    }
+    @keyframes banner{
+        10%{background-color: aqua;}
+        40%{background-color: blue;}
+        80%{background-color: rgb(10, 184, 50);}
+    }
+    .banner{
+        width: 600px;
+        height: 120px;
+        background: url(https://graphicsfamily.com/wp-content/uploads/edd/2020/11/Tasty-Food-Web-Banner-Design-scaled.jpg);
+        background-size: 100% 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .text1,.text2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 120px;
+        font-size: 40px;
+        color: white;
+        opacity: 0;
+    }
+    .text1{
+        animation: text1 6s infinite;
+       -webkit-animation: text1 6s infinite;
+    }
+    .text2{
+        animation: text2 6s infinite;
+       -webkit-animation: text2 6s infinite;
+    }
+    .animated{
+        opacity: 0.8;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(199, 16, 16);
+        animation: banner 6s infinite;
+        -webkit-animation: banner 6s infinite;
+    }
+</style>
+<body>
+    <section>
+        <div class="banner">
+            <div class="animated">
+                <div class="text1"> Unlimited storage</div>
+                <div class="text2">$150 per month</div>
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>

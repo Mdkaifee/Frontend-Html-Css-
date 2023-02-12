@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: rgb(170, 131, 60);
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.row {
+    max-width: 1140px;
+    margin: auto;
+}
+
+. {
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+header {
+    background-image: url(https://image.shutterstock.com/image-illustration/triangle-solid-black-golden-illustration-260nw-1862937556.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 500%;
+    color: wheat;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 225%;
+    color: wheat;
+    font-weight: 50;
+}
+
+.header-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text-box {
+    margin-bottom: 50px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: none;
+    padding: 10px 30px;
+    border-radius: 200px;
+    color: white;
+}
+
+.btn:active {}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #ed07b7;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #Bd0592;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+    
+}
+.main-nav li{
+    position: -webkit-sticky;
+    position: sticky;
+}
+.logo {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 66px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: white;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid palevioletred;
+}
+
+.laptop-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+   
+
+display:inline-block;
+float: right;
+
+}
+
+.about-heading {
+    color: black;
+    font-size: 250%px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 60px;
+
+}
+
+.about-para {
+    margin-bottom: 30px;
+    color: black;
+  
+}
+
+.about-box {
+    margin-top: 10px;
+}
+.btn-read{
+text-decoration: none;
+
+border-radius: 10%;
+color: white;
+background-color: black;
+}

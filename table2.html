@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr:nth-child(odd){
+            background-color: #1f4068;
+        }
+        tr:nth-child(even){
+            background-color: #206a5d;
+        }
+        th,td{
+            padding: 1rem;
+            color: #ebecf1;
+        }
+        th{
+            background-color: #1b1c25;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movies List</h1>
+    <table>
+    <tr>
+        <th>Title</th>
+        <th>Rating</th>
+        <th>Runtime(Minutes)</th>
+    </tr>
+    <tr>
+        <td>Spiderman</td>
+        <td>9.3</td>
+        <td>128</td>
+    </tr>
+    <tr>
+        <td>Rocketman</td>
+        <td>7.3</td>
+        <td>121</td>
+    </tr>
+    <tr>
+        <td>Parasite</td>
+        <td>8.6</td>
+        <td>133</td>
+    </tr>
+</table>
+</body>
+</html>
